@@ -1,0 +1,29 @@
+USBRH(1)                NetBSD General Commands Manual                USBRH(1)
+
+NNAAMMEE
+     uussbbrrhh -- show temperature and humidity with Strawberry Linux's USBRH
+
+SSYYNNOOPPSSIISS
+     uussbbrrhh [--ff _d_e_v_i_c_e] [--vv]
+
+DDEESSCCRRIIPPTTIIOONN
+     uussbbrrhh reads raw data from Strawberry Linux's USBRH device and prints the
+     calculated current temperature and humidity values.  At non-verbose mode,
+     it prints the temperature (in degree Celsius), TAB, and the relative
+     humidity.
+
+     The options are as follows:
+
+     --ff _d_e_v_i_c_e   Specify the device where USBRH is attached.  Default is
+                 /dev/uhid0 .
+
+     --vv          Add some explanation messages.
+
+FFIILLEESS
+     /dev/uhid0                        Default USB HID device where USBRH is
+                                       attached
+
+SSEEEE AALLSSOO
+     uhid(4)
+
+NetBSD 3.0                       July 22, 2006                      NetBSD 3.0
